@@ -1,0 +1,82 @@
+/* 根组件下的基础样式 */
+#app {
+  font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #2c3e50;
+  background: #eef3f5;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*  滚动条样式：仅限于Webkit内核浏览器 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,.1);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0,0,0,.25);
+  transition: color .2s ease 0s;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128,135,139,.8)
+}
+
+/* 重写浏览器基本样式 */
+li {
+  list-style: none;
+}
+.back-top {
+  border-radius: 50%;
+}
+
+:root {
+  --brand-color: #10c599;  
+}
+/*
+* Style by Jonten
+*/
+html{
+  /* 方便移动端布局 */
+  font-size: 100px;
+}
+body{
+  /* 设置页面默认字体大小为14px */
+  font-size: 0.14rem;
+  line-height: 1.5;
+  /* 不使用纯黑色#000，降低页面对比度 */
+  color:#222;
+}
+a{
+  color:#666;
+  text-decoration:none;
+}
+a:hover,a:active{
+  color: var(--brand-color);
+}
+::selection{
+  color #fff
+  background-color: var(--brand-color);
+  text-shadow:none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style:none;
+}
